@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using OddJokesApp.Models;
 
 namespace OddJokesApp.Data
 {
@@ -9,5 +10,6 @@ namespace OddJokesApp.Data
             : base(options)
         {
         }
+        public DbSet<OddJokesApp.Models.Joke> Joke { get; set; }
     }
 }
